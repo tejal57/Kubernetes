@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod  
+metadata :
+   name: nginx-pod
+   labels: 
+       app: tejal
+spec:
+    containers:
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+          protocal: TCP
+
+      - name: tomcat
+        image: tomcat:latest
+        ports:
+        - containerPort: 8080
+          protocal: TCP
+
+          
