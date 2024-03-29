@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod 
+metadata:
+  name: 2048-game 
+  labels:
+   app: mygame
+  namespace: game 
+spec: 
+  containers: 
+   - name: game-cont
+     image: tejal57/2048-game:new 
+     ports:
+     - containerPort: 80
+       protocol: TCP 
+       
