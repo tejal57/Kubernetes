@@ -10,11 +10,11 @@ spec:
         image: nginx:latest
         ports:
         - containerPort: 80
-          protocal: TCP
+          protocol: TCP
       - name: tomcat
         image: tomcat:latest
         ports:
         - containerPort: 8080
-          protocal: TCP
+          protocol: TCP
 
           
