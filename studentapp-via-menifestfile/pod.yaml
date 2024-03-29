@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod 
+metadata:
+  name: studentport 
+  labels:
+   app: student
+  namespace: data 
+spec: 
+  containers: 
+   - name: student-cont
+     image: tejal57/3tier:backend 
+     ports:
+     - containerPort: 8080
+       protocol: TCP 
+       
