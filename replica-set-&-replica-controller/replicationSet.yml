@@ -13,7 +13,7 @@ spec:
     #- {key: app, operator: In, values: [nginx-app, replica-set],}
    # -  { key: app, operator: Exists}
      matchLabels: 
-          #app: nginx-app
+         app: nginx-app
     
   template:
     metadata:
