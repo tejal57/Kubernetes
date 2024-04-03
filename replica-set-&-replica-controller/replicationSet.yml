@@ -9,9 +9,12 @@ metadata:
 spec:
   replicas: 5
   selector:
-    matchExpressions:
+   # matchExpressions:
     #- {key: app, operator: In, values: [nginx-app, replica-set],}
-    -  { key: app, operator: Exists}
+   # -  { key: app, operator: Exists}
+     matchLabels: 
+          #app: nginx-app
+    
   template:
     metadata:
       labels:
