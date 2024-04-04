@@ -9,11 +9,11 @@ metadata:
 spec:
   replicas: 5
   selector:
-   # matchExpressions:
-    #- {key: app, operator: In, values: [nginx-app, replica-set],}
-   # -  { key: app, operator: Exists}
+    matchExpressions:
+   - {key: app, operator: In, values: [nginx-app, replica-set],}
+   /* -  { key: app, operator: Exists}
      matchLabels: 
-         app: nginx-app
+         app: nginx-app */
     
   template:
     metadata:
