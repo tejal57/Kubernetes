@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: DaemonSet
+
+metadata:
+  name: deamonset
+  labels:
+    app: deamon
+  selector:
+    matchLabels:
+      app: deamon
+  template:
+    metadata:
+      labels:
+        app: deamon
+    spec:
+      containers:
+      - name: deamon
+        image: tomcat:latest
+        ports:
+        - containerPort: 80
+          protocol: TCP
