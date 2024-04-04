@@ -1,10 +1,10 @@
 apiVersion: apps/v1
 kind: DaemonSet
-
 metadata:
   name: deamonset
   labels:
     app: deamon
+spec:
   selector:
     matchLabels:
       app: deamon
