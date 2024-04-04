@@ -31,10 +31,6 @@ spec:
    selector:
      app: deamon
    ports:
-      - name: nginx 
-        port: 80
-        protocol: TCP 
-        targetPort: 80
       - name: tomcat 
         port: 8080
         protocol: TCP 
