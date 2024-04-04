@@ -10,7 +10,7 @@ spec:
   replicas: 5
   selector:
     matchExpressions:
-   - {key: app, operator: In, values: [nginx-app, replica],}
+   - {key: app, operator: In, values: [nginx-app, replica]}
       
   template:
     metadata:
