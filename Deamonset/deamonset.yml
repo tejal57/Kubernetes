@@ -17,5 +17,5 @@ metadata:
       - name: deamon
         image: tomcat:latest
         ports:
-        - containerPort: 80
+        - containerPort: 8080
           protocol: TCP
