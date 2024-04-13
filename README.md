@@ -3,6 +3,26 @@
 ### What is Kubernetes
 Kubernetes is an open-source container management also known as container orchestration tool for automating software deployment, scaling, and management.
 
+### Why Kubernetes?
+Kubernetes offers several key advantages that make it a popular choice for container orchestration and management:
+
+🧑🏻‍💻Deployment: Deploy a specified number of containers to a specified host and keep them running in a wanted state.
+
+✏️Rollouts: A rollout is a change to a deployment. Kubernetes lets you initiate, pause, resume or roll back rollouts.
+
+🌎Service discovery: Kubernetes can automatically expose a container to the internet or to other containers by using a domain name system (DNS) name or IP address.
+
+🛢️provisioning: Set Kubernetes to mount persistent local or cloud storage for your containers as needed.
+
+⚖️Load balancing: Based on CPU usage or custom metrics, Kubernetes load balancing can distribute the workload across the network to maintain performance and stability.
+
+📈Autoscaling: When traffic spikes, Kubernetes autoscaling can spin up new clusters as needed to handle the additional workload.
+
+🌐 Self-healing for high availability: When a container fails, Kubernetes can restart or replace it automatically to prevent downtime. It can also take down containers that don’t meet your health check requirements.
+
+
+
+
 ### What is Container Orchestration
 Orchestration enables developers to easily build containerized applications and services, as well as scale, schedule and monitor those containers.
 
