@@ -1,0 +1,13 @@
+In Kubernetes, namespaces provide a mechanism to segregate and manage resources such as pods, services, and deployments uniquely. However, namespaces alone are not sufficient to enforce strict isolation between different environments like development and operations, especially when you need to hide resources from each other. To achieve this level of isolation, you can use Network Policies along with namespaces.
+
+Using Namespaces and Network Policies
+
+Namespaces: Create separate namespaces for your development and operations environments.
+
+Dev Namespace: Contains all development-related pods and resources.
+Ops Namespace: Contains all operations-related pods and resources.
+
+Network Policies: Define network policies to control the communication between pods within and across namespaces. This allows you to restrict access such that:
+
+Dev pods cannot communicate with Ops pods.
+Ops pods cannot communicate with Dev pods.
