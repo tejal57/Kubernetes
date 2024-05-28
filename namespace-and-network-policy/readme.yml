@@ -4,10 +4,10 @@ Using Namespaces and Network Policies
 
 Namespaces: Create separate namespaces for your development and operations environments.
 
-Dev Namespace: Contains all development-related pods and resources.
-Ops Namespace: Contains all operations-related pods and resources.
+1]Dev Namespace: Contains all development-related pods and resources.
+2]Ops Namespace: Contains all operations-related pods and resources.
 
 Network Policies: Define network policies to control the communication between pods within and across namespaces. This allows you to restrict access such that:
 
-Dev pods cannot communicate with Ops pods.
-Ops pods cannot communicate with Dev pods.
+1]Dev pods cannot communicate with Ops pods.
+2]Ops pods cannot communicate with Dev pods.
