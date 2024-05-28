@@ -1,0 +1,1 @@
+development team cannot see or modify the resources (such as pods) in the operations namespace, you need to implement Role-Based Access Control (RBAC) in addition to using namespaces and network policies. RBAC allows to define fine-grained access controls by assigning roles to users and service accounts.
