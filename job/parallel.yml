@@ -1,0 +1,17 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: parallel-job
+spec:
+  completions: 5
+  parallelism: 2
+  template:
+    metadata:
+      name: parallel-job
+    spec:
+      containers:
+      - name: parallel-container
+        image: busybox
+        command: ["sh", "-c", "echo Hello, Kubernetes! && sleep 30"]
+      restartPolicy: Never
+ 
